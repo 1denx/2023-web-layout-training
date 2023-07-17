@@ -1,0 +1,186 @@
+.hero {
+    background: #000;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            padding: 72px 0;
+        }
+
+        .content {
+            h2 {
+                color: #fff;
+            }
+
+            h1 {
+                color: $txt-lightGreen;
+                text-align: right;
+            }
+
+
+        }
+    }
+}
+
+.btn {
+    text-align: right;
+
+    a {
+        text-align: center;
+        background: #fff;
+        color: #000;
+    }
+}
+
+.intro {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+
+    .container {
+        display: flex;
+        padding: 160px 0;
+
+        .content {
+            width: 526px;
+            color: #fff;
+
+            h2 {
+                margin-bottom: 36px;
+            }
+
+            p {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .intro-pic {
+            width: 746px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    .cards {
+        width: 636px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 206px 0;
+
+        li {
+            width: 306px;
+            padding: 16px;
+
+            h3,
+            p {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .content {
+        width: 526px;
+        padding: 160px 0;
+        margin-bottom: 24px;
+
+        h2 {
+            margin-bottom: 36px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+}
+
+.contact {
+    background-image: linear-gradient(to bottom, #050014, #01021E);
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: #fff;
+            margin-right: 16px;
+        }
+
+        a {
+            img {
+                width: 162px;
+                height: 162px;
+                object-fit: cover;
+                border-radius: 32px;
+
+                &:hover {
+                    box-shadow: 0 0 30px #9094FF;
+                }
+            }
+
+
+        }
+
+
+        .link {
+            display: flex;
+            align-items: center;
+            width: 526px;
+
+            li {
+                margin: 96px 10px;
+            }
+        }
+    }
+}
+
+.projects {
+    padding: 160px 0;
+
+    .txt {
+        display: flex;
+        justify-content: flex-end;
+
+        h2 {
+            width: 746px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.project-item {
+    display: flex;
+
+    .items {
+        margin-left: 24px;
+
+        .article {
+            display: flex;
+            width: 856px;
+            margin-bottom: 28px;
+
+            p {
+                margin-left: 24px;
+                margin-bottom: 76px;
+            }
+
+            a {
+                background: #000;
+                color: #fff;
+                border-radius: 32px;
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.item-pic {
+    display: flex;
+    justify-content: space-between;
+}

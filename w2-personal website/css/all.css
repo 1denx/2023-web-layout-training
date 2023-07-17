@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bruno Ace SC";
+  line-height: 1.5;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  font-size: 16px;
+}
+nav ul li a {
+  width: 306px;
+  display: block;
+  text-decoration: none;
+  color: #D1D1D1;
+  padding-top: 40px;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+footer {
+  background: #000;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.hero {
+  background: #000;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container img {
+  padding: 72px 0;
+}
+.hero .container .content h2 {
+  color: #fff;
+}
+.hero .container .content h1 {
+  color: #00FFA3;
+  text-align: right;
+}
+
+.btn {
+  text-align: right;
+}
+.btn a {
+  text-align: center;
+  background: #fff;
+  color: #000;
+}
+
+.intro {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+}
+.intro .container {
+  display: flex;
+  padding: 160px 0;
+}
+.intro .container .content {
+  width: 526px;
+  color: #fff;
+}
+.intro .container .content h2 {
+  margin-bottom: 36px;
+}
+.intro .container .content p {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.intro .container .intro-pic {
+  width: 746px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about .cards {
+  width: 636px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 206px 0;
+}
+.about .cards li {
+  width: 306px;
+  padding: 16px;
+}
+.about .cards li h3,
+.about .cards li p {
+  margin-bottom: 4px;
+}
+.about .content {
+  width: 526px;
+  padding: 160px 0;
+  margin-bottom: 24px;
+}
+.about .content h2 {
+  margin-bottom: 36px;
+}
+.about .content p {
+  font-size: 24px;
+}
+
+.contact {
+  background-image: linear-gradient(to bottom, #050014, #01021E);
+}
+.contact .container {
+  display: flex;
+  align-items: center;
+}
+.contact .container h2 {
+  color: #fff;
+  margin-right: 16px;
+}
+.contact .container a img {
+  width: 162px;
+  height: 162px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 32px;
+}
+.contact .container a img:hover {
+  box-shadow: 0 0 30px #9094FF;
+}
+.contact .container .link {
+  display: flex;
+  align-items: center;
+  width: 526px;
+}
+.contact .container .link li {
+  margin: 96px 10px;
+}
+
+.projects {
+  padding: 160px 0;
+}
+.projects .txt {
+  display: flex;
+  justify-content: flex-end;
+}
+.projects .txt h2 {
+  width: 746px;
+  margin-bottom: 16px;
+}
+
+.project-item {
+  display: flex;
+}
+.project-item .items {
+  margin-left: 24px;
+}
+.project-item .items .article {
+  display: flex;
+  width: 856px;
+  margin-bottom: 28px;
+}
+.project-item .items .article p {
+  margin-left: 24px;
+  margin-bottom: 76px;
+}
+.project-item .items .article a {
+  background: #000;
+  color: #fff;
+  border-radius: 32px;
+  margin-left: 24px;
+}
+
+.item-pic {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=all.css.map */
