@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding: 24px;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #bbb;
+}
+
+ol {
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 24px;
+}
