@@ -8,14 +8,11 @@ nav {
         justify-content: space-between;
 
         li {
-            font-size: 16px;
             padding-top: 40px;
-            a {
-                width: 306px;
+
+            .nav-item {
                 display: block;
-                text-decoration: none;
                 color: $txt-gray;
-                padding: 0;
             }
         }
     }
