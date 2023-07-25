@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Noto+Sans+TC";
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.fz-xs {
+    font-size: 14px;
+}
+
+.fz-s {
+    font-size: 16px;
+}
+
+.fz-m {
+    font-size: 20px;
+}
+
+.fz-l {
+    font-size: 36px;
+}
+
+.fz-xl {
+    font-size: 48px;
+}
+
+.pr-6 {
+    margin-right: 48px;
+}
