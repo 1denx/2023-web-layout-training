@@ -1,27 +1,75 @@
 header {
     background: $color-primary;
 
+    .container {
+        @include mobile {
+            padding: 0;
+        }
+    }
+
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        h1 {
-            width: 80px;
-            padding: 16px 0;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
         }
 
-        ul {
-            width: 492px;
-            display: flex;
-            justify-content: space-between;
+        .logo {
+            width: 80px;
+            padding: 16px 0;
+
+            @include mobile {
+                padding-left: 15px;
+                align-self: start;
+            }
+        }
+    }
+}
+
+.nav-list {
+    width: 492px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        @include mobile {
+            width: 50%;
+            padding: 12px 62px;
+            border: 1px solid #fff;
+        }
+
+        a {
+            @include mobile {
+                width: 100%;
+            }
         }
     }
 }
 
 footer {
     background: $color-primary;
-    padding: 64px 0 32px 0;
+    padding: 48px 0 32px 0;
+
+    @include mobile {
+        padding: 24px 0;
+    }
+}
+
+.link {
+    @include mobile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
 
 .subnav {
@@ -30,10 +78,22 @@ footer {
     align-items: center;
     margin-bottom: 36px;
 
+    @include pad {
+        margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin-bottom: 56px;
+    }
+
     .subnav-list {
         width: 464px;
         display: flex;
         justify-content: space-between;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .sns {
@@ -41,8 +101,24 @@ footer {
         display: flex;
         justify-content: space-between;
 
+        @include pad {
+            max-width: 152px;
+        }
+
+        @include mobile {
+            max-width: 88px;
+        }
+
         img {
             width: 48px;
+
+            @include pad {
+                max-width: 40px;
+            }
+
+            @include mobile {
+                max-width: 24px;
+            }
         }
 
     }
@@ -55,10 +131,33 @@ footer {
     align-items: flex-start;
     margin-bottom: 32px;
 
-    span {
-        font-size: 36px;
-        padding-right: 22px;
+    @include mobile {
+        margin-bottom: 24px;
     }
+
+    .footer-contact-link {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: block;
+            font-size: 36px;
+            padding-right: 22px;
+
+            @include mobile {
+                font-size: 16px;
+                padding-right: 11px;
+                margin-bottom: 8px;
+            }
+        }
+
+        p {
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+    }
+
 }
 
 .copyright {
@@ -67,113 +166,27 @@ footer {
     padding-top: 32px;
     border-top: 1px solid #fff;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+    }
+
     p {
         color: #fff;
+
+        @include mobile {
+            margin-bottom: 8px;
+        }
     }
 
     .term-link {
         display: flex;
-    }
-}
 
-@media (max-width:992px) {
-    .sns {
-        max-width: 152px;
-
-        img {
-            max-width: 40px;
-        }
-    }
-}
-
-@media (max-width:767px) {
-    .container {
-        font-size: 16px;
-
-        a {
-            font-size: 16px;
-        }
-    }
-
-    header .container {
-        padding: 0;
-
-        .header {
+        @include mobile {
             display: flex;
             flex-direction: column;
-
-            .logo {
-                padding-left: 15px;
-                align-self: start;
-            }
-
-            nav ul {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-
-                li {
-                    width: 50%;
-                    padding: 12px 62px;
-                    border: 1px solid #fff;
-                }
-
-                a {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    footer {
-        padding: 24px 0;
-
-        .link {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-
-            .subnav {
-                margin-bottom: 56px;
-
-                .subnav-list {
-                    display: none;
-                }
-
-                .sns {
-                    max-width: 88px;
-
-                    img {
-                        max-width: 24px;
-                    }
-                }
-            }
-        }
-
-        .footer-contact {
-            margin-bottom: 24px;
-
-            span {
-                font-size: 16px;
-                padding-right: 11px;
-                margin-bottom: 8px;
-            }
-        }
-
-        .copyright {
-            display: flex;
-            flex-direction: column;
-            padding-top: 16px;
-
-            p {
-                margin-bottom: 8px;
-            }
-
-            .term-link {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            align-items: flex-start;
         }
     }
 }

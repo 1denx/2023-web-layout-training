@@ -1,0 +1,294 @@
+.hero {
+    background-image: url("../image/home-header.png");
+    background-size: cover;
+    background-position: center;
+    padding: 296px 0;
+
+    @include mobile {
+        background-image: url("../image/home-header-sm.png");
+        padding: 144px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+
+        .hero-minor-title {
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+
+        .hero-title {
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 4px;
+
+            @include mobile {
+                font-size: 24px;
+            }
+        }
+
+        .hero-btn {
+            float: right;
+            padding: 6px 12px;
+            background: $color-primary;
+            color: #fff;
+        }
+    }
+}
+
+section {
+    padding: 80px 0;
+
+    @include mobile {
+        padding: 40px 0;
+    }
+}
+
+.service {
+    background: $color-bg;
+
+    .service-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 24px;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        width: 306px;
+        text-align: center;
+
+        @include pad {
+            width: 48%;
+            margin-bottom: 24px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .card-icon {
+            width: 83px;
+        }
+
+        .service-minor-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: justify;
+            color: #000;
+        }
+    }
+}
+
+.products {
+
+    .product-title {
+        font-weight: bold;
+        text-align: center;
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-cards-item {
+        width: 32%;
+
+        @include pad {
+            width: 336px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .product-minor-title {
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            margin-top: 8px;
+
+            @include pad {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+.co-branding {
+    background-image: url("../image/index-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    @include pad {
+        background-image: url("../image/index-bg-md.png");
+    }
+
+    @include mobile {
+        background-image: url("../image/index-bg-sm.png");
+    }
+
+    .co-branding-title {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.co-brianding-cards {
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item {
+        @include pad {
+            margin-bottom: 24px;
+        }
+
+        .branding-minor-title {
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            background: #fff;
+        }
+    }
+}
+
+.recommends-title {
+    font-weight: bold;
+    text-align: center;
+
+    @include mobile {
+        margin-bottom: 24px;
+    }
+}
+
+.recommends-cards {
+    display: flex;
+    justify-content: space-between;
+
+    @include pad {
+        flex-wrap: wrap;
+    }
+}
+
+.recommends-cards-item {
+    width: 306px;
+    border: 1px solid $color-lightgray;
+    box-shadow: 0 0 6px 0 #00000029;
+
+    @include pad {
+        width: 48%;
+        margin-bottom: 24px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    .item-content {
+        padding: 16px;
+
+        .client-name {
+            font-weight: 500;
+        }
+
+        span {
+            display: block;
+            margin-top: 72px;
+            color: $color-darkgray;
+        }
+    }
+}
+
+.contact {
+    background: $color-bg;
+
+    .container {
+        width: 636px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .contact-title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-content {
+            text-align: justify;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        margin-bottom: 16px;
+        line-height: 1.5;
+        background: $color-bg;
+        padding: 6px 0 6px 12px;
+    }
+
+    .opinion-txt {
+        padding: 6px 0 106px 12px;
+    }
+}
+
+.contact-btn {
+    margin: 0 auto;
+    width: 416px;
+    padding: 16px 176px;
+    background: $color-primary;
+    color: #fff;
+    font-weight: bold;
+
+    @include pad {
+        width: 336px;
+        padding: 16px 136px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
