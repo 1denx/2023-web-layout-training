@@ -2,24 +2,18 @@ header {
     background: #000;
 }
 
-nav {
-    ul {
-        display: flex;
-        justify-content: space-between;
+nav ul {
+    display: flex;
+    justify-content: space-between;
 
-        li {
-            padding-top: 40px;
+    li {
+        padding-top: 40px;
 
-            .nav-item {
-                display: block;
-                color: $txt-gray;
-            }
+        .nav-item {
+            display: block;
+            color: $txt-gray;
         }
     }
-}
-
-.txt-right {
-    text-align: right;
 }
 
 footer {
